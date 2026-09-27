@@ -1,4 +1,17 @@
-# HTTP Change Watcher
+<div align="center">
+
+# DidItChangeYet
+
+**Stop refreshing. Let the watcher check for you.**
+
+![Go](https://img.shields.io/badge/Go-1.22%2B-00ADD8?logo=go&logoColor=white)
+![Self hosted](https://img.shields.io/badge/Deployment-Self--hosted-0f766e)
+
+[Quick start](#quick-start) · [Configuration](#configuration-reference) · [Docker](#docker) · [Dashboard](#dashboard)
+
+</div>
+
+---
 
 A single-binary Go daemon that monitors URLs and API endpoints for changes and
 fires alerts via **Telegram**, **email (SMTP)**, or **ntfy.sh** when a
@@ -24,11 +37,13 @@ user-defined condition is met.
 
 ## Quick start
 
+Requires **Go 1.22+** to build from source.
+
 ### 1. Build
 
 ```bash
-git clone https://github.com/laohei101/diditchangeyet.git
-cd diditchangeyet
+git clone https://github.com/yukevindai/DidItChangeYet.git
+cd DidItChangeYet
 go build -o http-watcher .
 ```
 
